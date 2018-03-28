@@ -1,0 +1,22 @@
+{
+  "name": "colyseus-project",
+  "version": "1.0.0",
+  "main": "dist/server/bundle.js",
+  "scripts": {
+    "start": "npm run bundle && npm run startBundle",
+    "build": "npm run bundle",
+    "dev": "nodemon",
+    "startBundle": "node dist/server/bundle.js",
+    "bundle": "node fuse.js"
+  },
+  "dependencies": {
+    "colyseus": "^0.8.9",
+    "express": "^4.14.0",
+    "nodemon": "^1.11.0"
+  },
+  "devDependencies": {
+    "ts-node": "^3.3.0",
+    "typescript": "^2.4.2",
+    "fuse-box": "^2.4.0"
+  }
+}
